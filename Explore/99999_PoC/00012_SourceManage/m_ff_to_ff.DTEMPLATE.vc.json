@@ -1,0 +1,655 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "m_ff_to_ff",
+    "links" : [
+      {
+        "link" : "ソース -> ターゲット"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2025-04-22T09:46:13.846Z",
+        "name" : "ソース",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          },
+          {
+            "name" : "Thousand Separator",
+            "value" : "None"
+          },
+          {
+            "name" : "Decimal Separator",
+            "value" : "."
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "sessionProperties" : [
+          {
+            "name" : "File Reader Truncate String Null",
+            "value" : "NO"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "顧客ID"
+            },
+            "name" : "顧客ID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "顧客タイプ"
+            },
+            "name" : "顧客タイプ",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "氏名"
+            },
+            "name" : "氏名",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "氏名_カナ"
+            },
+            "name" : "氏名_カナ",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "性別"
+            },
+            "name" : "性別",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "電話番号"
+            },
+            "name" : "電話番号",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "郵便番号"
+            },
+            "name" : "郵便番号",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "都道府県"
+            },
+            "name" : "都道府県",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "市区"
+            },
+            "name" : "市区",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "町名"
+            },
+            "name" : "町名",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "番地"
+            },
+            "name" : "番地",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "アパート"
+            },
+            "name" : "アパート",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "都道府県_カナ"
+            },
+            "name" : "都道府県_カナ",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "市区_カナ"
+            },
+            "name" : "市区_カナ",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "町名_カナ"
+            },
+            "name" : "町名_カナ",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "番地_カナ"
+            },
+            "name" : "番地_カナ",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "アパート_カナ"
+            },
+            "name" : "アパート_カナ",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "生年月日"
+            },
+            "name" : "生年月日",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@1hbjhCdD26djR2MwAvcjSt",
+          "connectionName" : "asrocky95_flatfile",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "source/関西顧客.csv",
+            "label" : "source/関西顧客.csv",
+            "objectName" : "関西顧客.csv",
+            "path" : "source/関西顧客.csv",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "顧客ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "顧客ID",
+                "nativeName" : "顧客ID",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "source/関西顧客.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "顧客タイプ",
+                "fieldType" : "CONNECTOR",
+                "label" : "顧客タイプ",
+                "nativeName" : "顧客タイプ",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "source/関西顧客.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "氏名",
+                "fieldType" : "CONNECTOR",
+                "label" : "氏名",
+                "nativeName" : "氏名",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "source/関西顧客.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "氏名_カナ",
+                "fieldType" : "CONNECTOR",
+                "label" : "氏名_カナ",
+                "nativeName" : "氏名_カナ",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "source/関西顧客.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "性別",
+                "fieldType" : "CONNECTOR",
+                "label" : "性別",
+                "nativeName" : "性別",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "source/関西顧客.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "電話番号",
+                "fieldType" : "CONNECTOR",
+                "label" : "電話番号",
+                "nativeName" : "電話番号",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "source/関西顧客.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "郵便番号",
+                "fieldType" : "CONNECTOR",
+                "label" : "郵便番号",
+                "nativeName" : "郵便番号",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "source/関西顧客.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "都道府県",
+                "fieldType" : "CONNECTOR",
+                "label" : "都道府県",
+                "nativeName" : "都道府県",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "source/関西顧客.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "市区",
+                "fieldType" : "CONNECTOR",
+                "label" : "市区",
+                "nativeName" : "市区",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "source/関西顧客.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "町名",
+                "fieldType" : "CONNECTOR",
+                "label" : "町名",
+                "nativeName" : "町名",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "source/関西顧客.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "番地",
+                "fieldType" : "CONNECTOR",
+                "label" : "番地",
+                "nativeName" : "番地",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "source/関西顧客.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "アパート",
+                "fieldType" : "CONNECTOR",
+                "label" : "アパート",
+                "nativeName" : "アパート",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "source/関西顧客.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "都道府県_カナ",
+                "fieldType" : "CONNECTOR",
+                "label" : "都道府県_カナ",
+                "nativeName" : "都道府県_カナ",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "source/関西顧客.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "市区_カナ",
+                "fieldType" : "CONNECTOR",
+                "label" : "市区_カナ",
+                "nativeName" : "市区_カナ",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "source/関西顧客.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "町名_カナ",
+                "fieldType" : "CONNECTOR",
+                "label" : "町名_カナ",
+                "nativeName" : "町名_カナ",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "source/関西顧客.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "番地_カナ",
+                "fieldType" : "CONNECTOR",
+                "label" : "番地_カナ",
+                "nativeName" : "番地_カナ",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "source/関西顧客.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "アパート_カナ",
+                "fieldType" : "CONNECTOR",
+                "label" : "アパート_カナ",
+                "nativeName" : "アパート_カナ",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "source/関西顧客.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "生年月日",
+                "fieldType" : "CONNECTOR",
+                "label" : "生年月日",
+                "nativeName" : "生年月日",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "source/関西顧客.csv"
+                  }
+                ]
+              }
+            ],
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2025-04-22T09:46:13.846Z",
+        "name" : "ターゲット",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "true",
+        "fieldMappingMode" : "BY_NAME",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "dataAdapter" : {
+          "connectionId" : "saas:@1hbjhCdD26djR2MwAvcjSt",
+          "connectionName" : "asrocky95_flatfile",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "target/tgt_customer.csv",
+            "label" : "target/tgt_customer.csv",
+            "path" : "target/tgt_customer.csv",
+            "retainMetadata" : "false",
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "none"
+            }
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-04-22 19:59:58 JST"
+}
