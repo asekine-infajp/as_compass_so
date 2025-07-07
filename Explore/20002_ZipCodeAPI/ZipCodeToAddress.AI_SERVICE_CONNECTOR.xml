@@ -1,0 +1,177 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>4zDLdw8jIw8jIw8-gt-486534-2025-07-05T14:11:08.89Z::svc.xml</types1:EntryId>
+      <types1:Name>ZipCodeToAddress</types1:Name>
+      <types1:ParentFlowIds>rwn2H0Fdw8jIw8j-gt-486782-2025-07-05T14:21:23.289Z::conn.xml</types1:ParentFlowIds>
+      <types1:MimeType>application/xml+businesssconnector</types1:MimeType>
+      <types1:Description>http://zip.cgis.biz/</types1:Description>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>asekine_JP_Tech_Sales_tspod_SO</types1:CreatedBy>
+      <types1:CreationDate>2025-07-05T14:11:09Z</types1:CreationDate>
+      <types1:ModifiedBy>asekine_JP_Tech_Sales_tspod_SO</types1:ModifiedBy>
+      <types1:ModificationDate>2025-07-06T23:21:28Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>asekine_JP_Tech_Sales_tspod_SO</types1:PublishedBy>
+      <types1:PublicationDate>2025-07-06T23:21:44Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/rt.connector/ZipCodeToAddress/ZipCodeToAddress_svcDef.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <businessConnector xmlns="http://schemas.informatica.com/socrates/data-services/2014/05/business-connector-model.xsd"
+                            agentOnly="false"
+                            debug="false"
+                            displayName="ZipCodeToAddress"
+                            label=""
+                            name="ZipCodeToAddress"
+                            uuid="1c10c104-4361-40ec-99cf-af8cfe36b1c3">
+            <description>http://zip.cgis.biz/</description>
+            <tags/>
+            <connectionAttributes xmlns="http://schemas.informatica.com/appmodules/screenflow/2014/04/avosConnectors.xsd"/>
+            <actions>
+               <action category=""
+                       failOnError="true"
+                       forSearch="false"
+                       label="ZiptoAddress"
+                       maxRedirects="100"
+                       name="ZiptoAddress"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter description="郵便番号 数値7桁"
+                                label="zn"
+                                name="zn"
+                                required="false"
+                                testWith="1000005"
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding multiUsing="semicolonSeparated"
+                                        url="http://zip.cgis.biz/xml/zip.php?zn={$zn}"
+                                        verb="GET">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description=""
+                            name="ADDRESS_value"
+                            type="string"
+                            xmlElement="ADDRESS_value"/>
+                  </output>
+               </action>
+            </actions>
+            <objects>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              xmlns:aetgt="http://schemas.informatica.com/appmodules/screenflow/2014/04/avosConnectors.xsd"
+                              isByCopy="true"
+                              name="ZIP_result">
+                  <description>An automatically generated process object</description>
+                  <detail>
+                     <field name="result"
+                            nullable="true"
+                            required="false"
+                            type="objectlist">
+                        <options>
+                           <option name="referenceTo">result</option>
+                           <option name="relationshipName">Child</option>
+                        </options>
+                     </field>
+                     <field name="ADDRESS_value"
+                            nullable="true"
+                            required="false"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">ADDRESS_value</option>
+                           <option name="relationshipName">Child</option>
+                        </options>
+                     </field>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              xmlns:aetgt="http://schemas.informatica.com/appmodules/screenflow/2014/04/avosConnectors.xsd"
+                              isByCopy="true"
+                              name="result">
+                  <description>An automatically generated process object</description>
+                  <detail>
+                     <field name="name" nullable="true" required="false" type="string"/>
+                     <field name="version" nullable="true" required="false" type="double"/>
+                     <field name="request_url"
+                            nullable="true"
+                            required="false"
+                            type="string"/>
+                     <field name="request_zip_num"
+                            nullable="true"
+                            required="false"
+                            type="int"/>
+                     <field name="request_zip_version"
+                            nullable="true"
+                            required="false"
+                            type="string"/>
+                     <field name="result_code" nullable="true" required="false" type="int"/>
+                     <field name="result_zip_num"
+                            nullable="true"
+                            required="false"
+                            type="int"/>
+                     <field name="result_zip_version"
+                            nullable="true"
+                            required="false"
+                            type="int"/>
+                     <field name="result_values_count"
+                            nullable="true"
+                            required="false"
+                            type="int"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              xmlns:aetgt="http://schemas.informatica.com/appmodules/screenflow/2014/04/avosConnectors.xsd"
+                              isByCopy="true"
+                              name="ADDRESS_value">
+                  <description>An automatically generated process object</description>
+                  <detail>
+                     <field name="value" nullable="true" required="false" type="objectlist">
+                        <options>
+                           <option name="referenceTo">value</option>
+                           <option name="relationshipName">Child</option>
+                        </options>
+                     </field>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              xmlns:aetgt="http://schemas.informatica.com/appmodules/screenflow/2014/04/avosConnectors.xsd"
+                              isByCopy="true"
+                              name="value">
+                  <description>An automatically generated process object</description>
+                  <detail>
+                     <field name="state_kana"
+                            nullable="true"
+                            required="false"
+                            type="string"/>
+                     <field name="city_kana" nullable="true" required="false" type="string"/>
+                     <field name="address_kana"
+                            nullable="true"
+                            required="false"
+                            type="string"/>
+                     <field name="company_kana"
+                            nullable="true"
+                            required="false"
+                            type="string"/>
+                     <field name="state" nullable="true" required="false" type="string"/>
+                     <field name="city" nullable="true" required="false" type="string"/>
+                     <field name="address" nullable="true" required="false" type="string"/>
+                     <field name="company" nullable="true" required="false" type="string"/>
+                  </detail>
+               </processObject>
+            </objects>
+         </businessConnector>
+      </types1:Entry>
+      <types1:GUID>32PB3uuLdkolawcUbEnvss</types1:GUID>
+      <types1:DisplayName>ZipCodeToAddress</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2025-07-07T00:29:28.081Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

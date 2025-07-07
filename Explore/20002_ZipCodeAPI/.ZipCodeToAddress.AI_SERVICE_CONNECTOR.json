@@ -1,0 +1,27 @@
+{
+  "objectInfo" : {
+    "id" : "32PB3uuLdkolawcUbEnvss",
+    "name" : "ZipCodeToAddress",
+    "type" : "AI_SERVICE_CONNECTOR",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "4zDLdw8jIw8jIw8-gt-486534-2025-07-05T14:11:08.89Z::svc.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "http://zip.cgis.biz/",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2025-07-07T00:29:28.744Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

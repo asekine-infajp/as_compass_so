@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "9GV0WHEOJahc0evuGyvaS4",
+    "name" : "as-pca-ZipSearchXML",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "Hy2uI5CUP9WYVMP-gt-484869-2025-07-05T14:29:07.653Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2025-07-07T00:29:28.745Z",
+  "objectRefs" : [ {
+    "id" : "6l7ydn0q88ehv0Oy6TyBiM",
+    "name" : "ZipCgisBiz",
+    "type" : "AI_CONNECTION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "rwn2H0Fdw8jIw8j-gt-486782-2025-07-05T14:21:23.289Z::conn.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "http://zip.cgis.biz/xml/zip.php",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/20002_ZipCodeAPI"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
