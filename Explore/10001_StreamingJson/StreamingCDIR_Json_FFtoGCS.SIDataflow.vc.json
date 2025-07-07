@@ -1,0 +1,84 @@
+{
+  "agentId" : "010T8D2500000000005Q",
+  "nodes" : [ {
+    "id" : "162ffc79-42ad-4a2e-a8f7-75f56b764eed",
+    "name" : "StreamingCDIR_Json_FFtoGCS_source",
+    "serviceType" : "source",
+    "config" : [ {
+      "key" : "_nativeName",
+      "value" : "source/streamdata/nokkia/call_data.json"
+    }, {
+      "key" : "initialPosition",
+      "value" : "Current Time"
+    }, {
+      "key" : "rolloverPattern",
+      "value" : null
+    }, {
+      "key" : "tailingMode",
+      "value" : "Single file"
+    } ],
+    "connectionId" : "010T8D0B00000000003L",
+    "type" : "",
+    "metaMetadata" : ""
+  }, {
+    "id" : "2749fb11-7814-40af-993a-92389410697f",
+    "name" : "StreamingCDIR_Json_FFtoGCS_target",
+    "serviceType" : "target",
+    "config" : [ {
+      "key" : "gcsContentType",
+      "value" : ""
+    }, {
+      "key" : "nativeName",
+      "value" : "INFA_Stream/call_data"
+    }, {
+      "key" : "gcsObjectAcl",
+      "value" : ""
+    }, {
+      "key" : "gcpProxyPort",
+      "value" : "0"
+    }, {
+      "key" : "gcsContentDispositionType",
+      "value" : "inline"
+    }, {
+      "key" : "gcpRetryCount",
+      "value" : "6"
+    }, {
+      "key" : "gcsBucket",
+      "value" : "infaasbucket03"
+    }, {
+      "key" : "gcsServerSideEncryptionKey",
+      "value" : ""
+    }, {
+      "key" : "gcpProxyHost",
+      "value" : ""
+    } ],
+    "connectionId" : "010T8D0B00000000003N",
+    "type" : "googlestoragev2",
+    "metaMetadata" : "Generic"
+  } ],
+  "edges" : [ {
+    "id" : "447b6099-3081-45bb-b192-a4996c3188fe",
+    "name" : "edge0",
+    "from" : "StreamingCDIR_Json_FFtoGCS_source",
+    "to" : "StreamingCDIR_Json_FFtoGCS_target",
+    "type" : "success",
+    "config" : [ ],
+    "metaMetadata" : ""
+  } ],
+  "runtimeOptions" : {
+    "maxLogSize" : {
+      "value" : 10,
+      "unit" : "MB"
+    },
+    "logLevel" : "INFO",
+    "config" : [ ]
+  },
+  "customAttributes" : {
+    "project" : "10001_StreamingJson",
+    "agentId" : "010T8D2500000000005Q",
+    "messageFormat" : "binary",
+    "environmentType" : "Secure Agent",
+    "currentVersion" : "9"
+  },
+  "description" : null
+}

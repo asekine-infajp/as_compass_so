@@ -1,0 +1,93 @@
+{
+  "objectInfo" : {
+    "id" : "haccAmhxGqhjbUHC7as3Ye",
+    "name" : "StreamingCDIR_Json_FFtoGCS",
+    "type" : "SIDataflow",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "4b07fa9c-6021-44ad-8e31-8bd5db84135b"
+      },
+      "contextAttributes" : [ {
+        "name" : "parentId",
+        "value" : "35zcHJlytgjklcGYe7KnG7"
+      }, {
+        "name" : "version",
+        "value" : "10"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "dat",
+  "updateTime" : "2025-07-07T07:31:55.710Z",
+  "objectRefs" : [ {
+    "id" : "khWk7EnxWoxjEj7mi3L4Mq",
+    "name" : "asrocky95_GoogleCloudStorage_V2",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010T8D0B00000000003N"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "asrocky95",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "1hbjhCdD26djR2MwAvcjSt",
+    "name" : "asrocky95_flatfile",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010T8D0B00000000003L"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "asrocky95",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "34gv5QrjeDkfiWTtYSNYWj",
+    "name" : "asrocky95",
+    "type" : "AgentGroup",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010T8D2500000000005Q"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  } ],
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
+}
