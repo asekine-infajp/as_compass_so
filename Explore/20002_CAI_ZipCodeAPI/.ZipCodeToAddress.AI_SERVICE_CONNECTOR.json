@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "32PB3uuLdkolawcUbEnvss",
+    "id" : "5Ap3jxOTZiPgMwefoHjg6p",
     "name" : "ZipCodeToAddress",
     "type" : "AI_SERVICE_CONNECTOR",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "4zDLdw8jIw8jIw8-gt-486534-2025-07-05T14:11:08.89Z::svc.xml"
+        "repoHandle" : "Q0mu6lS01BchMYe-gt-416454-2025-07-13T02:51:27.685Z::svc.xml"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -20,7 +20,7 @@
     }
   },
   "dataFileExtension" : "xml",
-  "updateTime" : "2025-07-07T00:29:28.744Z",
+  "updateTime" : "2025-07-15T13:25:43.489Z",
   "objectRefs" : [ ],
   "readableFileExtension" : null,
   "readableFilePresent" : false

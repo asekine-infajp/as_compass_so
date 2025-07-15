@@ -1,9 +1,9 @@
 <aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
                    xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
    <types1:Item>
-      <types1:EntryId>rwn2H0Fdw8jIw8j-gt-486782-2025-07-05T14:21:23.289Z::conn.xml</types1:EntryId>
+      <types1:EntryId>iTk08jIw8jIw8jI-gt-845094-2025-07-13T02:51:28.131Z::conn.xml</types1:EntryId>
       <types1:Name>ZipCgisBiz</types1:Name>
-      <types1:ParentFlowIds>Hy2uI5CUP9WYVMP-gt-484869-2025-07-05T14:29:07.653Z::pd.xml</types1:ParentFlowIds>
+      <types1:ParentFlowIds>Smbduaa-gt-414955-2025-07-13T02:51:28.722Z::pd.xml</types1:ParentFlowIds>
       <types1:MimeType>application/xml+connection</types1:MimeType>
       <types1:Description>http://zip.cgis.biz/xml/zip.php</types1:Description>
       <types1:AppliesTo/>
@@ -11,12 +11,12 @@
       <types1:VersionLabel>1.0</types1:VersionLabel>
       <types1:State>CURRENT</types1:State>
       <types1:ProcessGroup/>
-      <types1:CreatedBy>asekine_JP_Tech_Sales_tspod_SO</types1:CreatedBy>
-      <types1:CreationDate>2025-07-05T14:21:23Z</types1:CreationDate>
+      <types1:CreatedBy>Asekine_GCS_Sub_01</types1:CreatedBy>
+      <types1:CreationDate>2025-07-13T02:51:28Z</types1:CreationDate>
       <types1:ModifiedBy/>
       <types1:PublicationStatus>published</types1:PublicationStatus>
-      <types1:PublishedBy>asekine_JP_Tech_Sales_tspod_SO</types1:PublishedBy>
-      <types1:PublicationDate>2025-07-06T23:22:03Z</types1:PublicationDate>
+      <types1:PublishedBy>Asekine_GCS_Sub_01</types1:PublishedBy>
+      <types1:PublicationDate>2025-07-13T02:51:43Z</types1:PublicationDate>
       <types1:PublishedContributionId>project:/rt.connection/ZipCgisBiz/ZipCgisBiz.conn.xml</types1:PublishedContributionId>
       <types1:Entry>
          <connection xmlns="http://schemas.informatica.com/socrates/data-services/2014/04/avosConnections.xsd"
@@ -29,7 +29,7 @@
             <businessConnector xmlns="http://schemas.informatica.com/appmodules/screenflow/2014/04/avosConnectors.xsd"
                                agentOnly="false"
                                connectorPath="project:/rt.connector/ZipCodeToAddress/ZipCodeToAddress_svcDef.xml"
-                               guid="32PB3uuLdkolawcUbEnvss"
+                               guid="5Ap3jxOTZiPgMwefoHjg6p"
                                name="ZipCodeToAddress"
                                supportsConnectionTest="false"
                                uuid="1c10c104-4361-40ec-99cf-af8cfe36b1c3">
@@ -37,8 +37,8 @@
             </businessConnector>
          </connection>
       </types1:Entry>
-      <types1:GUID>6l7ydn0q88ehv0Oy6TyBiM</types1:GUID>
+      <types1:GUID>7JiK4S4Z0fheagiNetT8Iv</types1:GUID>
       <types1:DisplayName>ZipCgisBiz</types1:DisplayName>
    </types1:Item>
-   <types1:CurrentServerDateTime>2025-07-07T00:29:28.294Z</types1:CurrentServerDateTime>
+   <types1:CurrentServerDateTime>2025-07-15T13:25:42.64Z</types1:CurrentServerDateTime>
 </aetgt:getResponse>

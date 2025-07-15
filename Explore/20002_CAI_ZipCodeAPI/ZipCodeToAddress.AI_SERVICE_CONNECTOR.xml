@@ -1,9 +1,8 @@
 <aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
                    xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
    <types1:Item>
-      <types1:EntryId>4zDLdw8jIw8jIw8-gt-486534-2025-07-05T14:11:08.89Z::svc.xml</types1:EntryId>
+      <types1:EntryId>Q0mu6lS01BchMYe-gt-416454-2025-07-13T02:51:27.685Z::svc.xml</types1:EntryId>
       <types1:Name>ZipCodeToAddress</types1:Name>
-      <types1:ParentFlowIds>rwn2H0Fdw8jIw8j-gt-486782-2025-07-05T14:21:23.289Z::conn.xml</types1:ParentFlowIds>
       <types1:MimeType>application/xml+businesssconnector</types1:MimeType>
       <types1:Description>http://zip.cgis.biz/</types1:Description>
       <types1:AppliesTo/>
@@ -11,13 +10,12 @@
       <types1:VersionLabel>1.0</types1:VersionLabel>
       <types1:State>CURRENT</types1:State>
       <types1:ProcessGroup/>
-      <types1:CreatedBy>asekine_JP_Tech_Sales_tspod_SO</types1:CreatedBy>
-      <types1:CreationDate>2025-07-05T14:11:09Z</types1:CreationDate>
-      <types1:ModifiedBy>asekine_JP_Tech_Sales_tspod_SO</types1:ModifiedBy>
-      <types1:ModificationDate>2025-07-06T23:21:28Z</types1:ModificationDate>
+      <types1:CreatedBy>Asekine_GCS_Sub_01</types1:CreatedBy>
+      <types1:CreationDate>2025-07-13T02:51:28Z</types1:CreationDate>
+      <types1:ModifiedBy/>
       <types1:PublicationStatus>published</types1:PublicationStatus>
-      <types1:PublishedBy>asekine_JP_Tech_Sales_tspod_SO</types1:PublishedBy>
-      <types1:PublicationDate>2025-07-06T23:21:44Z</types1:PublicationDate>
+      <types1:PublishedBy>Asekine_GCS_Sub_01</types1:PublishedBy>
+      <types1:PublicationDate>2025-07-13T02:51:33Z</types1:PublicationDate>
       <types1:PublishedContributionId>project:/rt.connector/ZipCodeToAddress/ZipCodeToAddress_svcDef.xml</types1:PublishedContributionId>
       <types1:Entry>
          <businessConnector xmlns="http://schemas.informatica.com/socrates/data-services/2014/05/business-connector-model.xsd"
@@ -170,8 +168,8 @@
             </objects>
          </businessConnector>
       </types1:Entry>
-      <types1:GUID>32PB3uuLdkolawcUbEnvss</types1:GUID>
+      <types1:GUID>5Ap3jxOTZiPgMwefoHjg6p</types1:GUID>
       <types1:DisplayName>ZipCodeToAddress</types1:DisplayName>
    </types1:Item>
-   <types1:CurrentServerDateTime>2025-07-07T00:29:28.081Z</types1:CurrentServerDateTime>
+   <types1:CurrentServerDateTime>2025-07-15T13:25:42.345Z</types1:CurrentServerDateTime>
 </aetgt:getResponse>
