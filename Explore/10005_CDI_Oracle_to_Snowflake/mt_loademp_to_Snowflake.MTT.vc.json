@@ -1,0 +1,131 @@
+{
+  "name" : "mt_loademp_to_Snowflake",
+  "runtimeEnvironmentId" : "@7kqWZR7CfcledgNSe8Kd0O",
+  "runtimeEnvironmentName" : "AS_SAG01",
+  "maxLogs" : 10,
+  "parameters" : [
+    {
+      "name" : "$src_OraDept$",
+      "type" : "EXTENDED_SOURCE",
+      "label" : "src_OraDept",
+      "uiProperties" : {
+        "connectionParameterized" : "false",
+        "isSelectDistinct" : "false",
+        "isMsrcFilterParameterized" : "false",
+        "isMsrcSortParameterized" : "false",
+        "objectParameterized" : "false",
+        "visible" : "false",
+        "flags" : "SUPPORTS_MULTI_SCHEMA",
+        "originalPath" : "src_OraDept"
+      },
+      "sourceConnectionId" : "@7HZ9r9KPycwcCMatEcSpyH",
+      "connectionName" : "asr95_OracleRDSts_utf8",
+      "newFlatFile" : false,
+      "newObject" : false,
+      "showBusinessNames" : false,
+      "naturalOrder" : true,
+      "truncateTarget" : false,
+      "bulkApiDBTarget" : false,
+      "customFuncCfg" : { },
+      "extendedObject" : {
+        "object" : {
+          "name" : "ASEKINE/DEPT",
+          "label" : "DEPT",
+          "metadataUpdated" : false,
+          "dbSchema" : "ASEKINE"
+        },
+        "singleMode" : true,
+        "objects" : [
+          {
+            "name" : "ASEKINE/DEPT",
+            "label" : "DEPT",
+            "metadataUpdated" : false,
+            "dbSchema" : "ASEKINE"
+          }
+        ]
+      },
+      "commandType" : 0,
+      "handleSpecialChars" : false,
+      "handleDecimalRoundOff" : false,
+      "frsAsset" : false,
+      "dynamicFileName" : false,
+      "excludeDynamicFileNameField" : false,
+      "currentlyProcessedFileName" : false,
+      "retainFieldMetadata" : false,
+      "useExactSrcNames" : false,
+      "userUpdated" : true,
+      "unspecified" : false,
+      "fetchMode" : "ORIGINAL",
+      "runtimeParameterData" : {
+        "connectionRuntimeParameter" : false,
+        "objectRuntimeParameter" : false
+      },
+      "restmodernSource" : true,
+      "fileList" : false
+    },
+    {
+      "name" : "$tgt_SnowDept$",
+      "type" : "TARGET",
+      "label" : "tgt_SnowDept",
+      "uiProperties" : {
+        "connectionParameterized" : "false",
+        "objectParameterized" : "false",
+        "visible" : "false",
+        "supportApplyDDLChanges" : "true",
+        "originalPath" : "tgt_SnowDept"
+      },
+      "targetConnectionId" : "@fAaibHELbQ6kkMSaKsquau",
+      "connectionName" : "asr95_SnowFlakets_CDIR",
+      "targetObject" : "JAPAN_SC_DB/ASEKINE/DEPT",
+      "targetObjectLabel" : "JAPAN_SC_DB/ASEKINE/DEPT",
+      "newFlatFile" : false,
+      "newObject" : true,
+      "showBusinessNames" : false,
+      "naturalOrder" : true,
+      "newObjectName" : "JAPAN_SC_DB/ASEKINE/DEPT",
+      "truncateTarget" : false,
+      "bulkApiDBTarget" : false,
+      "operationType" : "Insert",
+      "customFuncCfg" : { },
+      "extendedObject" : {
+        "singleMode" : true
+      },
+      "commandType" : 0,
+      "handleSpecialChars" : false,
+      "handleDecimalRoundOff" : false,
+      "frsAsset" : false,
+      "dynamicFileName" : false,
+      "excludeDynamicFileNameField" : false,
+      "currentlyProcessedFileName" : false,
+      "retainFieldMetadata" : false,
+      "objectName" : "JAPAN_SC_DB/ASEKINE/DEPT",
+      "objectLabel" : "JAPAN_SC_DB/ASEKINE/DEPT",
+      "useExactSrcNames" : false,
+      "userUpdated" : true,
+      "unspecified" : false,
+      "fetchMode" : "ORIGINAL",
+      "runtimeParameterData" : {
+        "connectionRuntimeParameter" : false,
+        "objectRuntimeParameter" : false
+      },
+      "targetSchemaProviderType" : "SELECTED_OBJECT",
+      "restmodernSource" : true,
+      "fileList" : false
+    }
+  ],
+  "verbose" : false,
+  "lastRunTime" : 1752584374000,
+  "mappingId" : "@4gvjJdhlOMDgjG1IPas8o5",
+  "mappingTemplateName" : "m_loademp_to_Snowflake",
+  "hidden" : false,
+  "enableCrossSchemaPushdown" : false,
+  "enableParallelRun" : false,
+  "autoTunedApplied" : false,
+  "autoTunedAppliedType" : "NONE",
+  "schemaMode" : "async",
+  "valid" : true,
+  "optimizationPlan" : "NONE",
+  "allowMaxFieldLength" : false,
+  "midstreamPreview" : false,
+  "vcsExportTime" : "2025-07-15 06:23:22 PDT"
+}

@@ -1,0 +1,309 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "m_loademp_to_Snowflake",
+    "links" : [
+      {
+        "link" : "src_OraDept -> tgt_SnowDept"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2025-07-15T12:55:41.134Z",
+        "name" : "src_OraDept",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "DEPTNO"
+            },
+            "name" : "DEPTNO",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 2,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DNAME"
+            },
+            "name" : "DNAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 14,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "LOC"
+            },
+            "name" : "LOC",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 13,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@7HZ9r9KPycwcCMatEcSpyH",
+          "connectionName" : "asr95_OracleRDSts_utf8",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "Oracle",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "ASEKINE/DEPT",
+            "dbSchema" : "ASEKINE",
+            "label" : "DEPT",
+            "objectName" : "DEPT",
+            "path" : "ASEKINE/DEPT",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "DEPTNO",
+                "fieldType" : "CONNECTOR",
+                "label" : "DEPTNO",
+                "nativeName" : "DEPTNO",
+                "nativeType" : "decimal",
+                "original" : "false",
+                "precision" : 2,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "ASEKINE/DEPT"
+                  }
+                ]
+              },
+              {
+                "name" : "DNAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "DNAME",
+                "nativeName" : "DNAME",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 14,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "ASEKINE/DEPT"
+                  }
+                ]
+              },
+              {
+                "name" : "LOC",
+                "fieldType" : "CONNECTOR",
+                "label" : "LOC",
+                "nativeName" : "LOC",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 13,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "ASEKINE/DEPT"
+                  }
+                ]
+              }
+            ]
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2025-07-15T12:55:41.134Z",
+        "name" : "tgt_SnowDept",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "true",
+        "fieldMappingMode" : "BY_NAME",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "DEPTNO"
+            },
+            "name" : "DEPTNO",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 2,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DNAME"
+            },
+            "name" : "DNAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 14,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "LOC"
+            },
+            "name" : "LOC",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 13,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@fAaibHELbQ6kkMSaKsquau",
+          "connectionName" : "asr95_SnowFlakets_CDIR",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "TOOLKIT",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "JAPAN_SC_DB/ASEKINE/DEPT",
+            "label" : "JAPAN_SC_DB/ASEKINE/DEPT",
+            "path" : "JAPAN_SC_DB/ASEKINE/DEPT",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "DEPTNO",
+                "fieldType" : "CONNECTOR",
+                "label" : "DEPTNO",
+                "nativeName" : "DEPTNO",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 2,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DEPT"
+                  }
+                ]
+              },
+              {
+                "name" : "DNAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "DNAME",
+                "nativeName" : "DNAME",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 14,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DEPT"
+                  }
+                ]
+              },
+              {
+                "name" : "LOC",
+                "fieldType" : "CONNECTOR",
+                "label" : "LOC",
+                "nativeName" : "LOC",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 13,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DEPT"
+                  }
+                ]
+              }
+            ]
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-07-15 06:23:22 PDT"
+}
