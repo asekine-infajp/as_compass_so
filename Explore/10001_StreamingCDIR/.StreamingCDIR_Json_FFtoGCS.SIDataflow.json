@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "haccAmhxGqhjbUHC7as3Ye",
+    "id" : "6rA7QSbbNyGjyW09ezvgaj",
     "name" : "StreamingCDIR_Json_FFtoGCS",
     "type" : "SIDataflow",
     "metadata" : {
@@ -9,14 +9,14 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "4b07fa9c-6021-44ad-8e31-8bd5db84135b"
+        "repoHandle" : "644412df-a247-452e-8551-a15e6dd2bcaa"
       },
       "contextAttributes" : [ {
         "name" : "parentId",
-        "value" : "35zcHJlytgjklcGYe7KnG7"
+        "value" : "abevRKcmHKKdv9RuaXIOUu"
       }, {
         "name" : "version",
-        "value" : "10"
+        "value" : "1"
       } ],
       "additionalInfo" : {
         "description" : null,
@@ -26,10 +26,10 @@
     }
   },
   "dataFileExtension" : "dat",
-  "updateTime" : "2025-07-07T07:31:55.710Z",
+  "updateTime" : "2025-07-15T08:07:28.478Z",
   "objectRefs" : [ {
-    "id" : "khWk7EnxWoxjEj7mi3L4Mq",
-    "name" : "asrocky95_GoogleCloudStorage_V2",
+    "id" : "1NmioVYXPmHdBuLQzer3oy",
+    "name" : "asr95_localff",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -37,19 +37,19 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "010T8D0B00000000003N"
+        "repoHandle" : "010QNH0B000000000002"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "asrocky95",
+        "description" : null,
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }
     },
     "path" : "/SYS"
   }, {
-    "id" : "1hbjhCdD26djR2MwAvcjSt",
-    "name" : "asrocky95_flatfile",
+    "id" : "9nRMfcgVq2pkzw1qzqP3o8",
+    "name" : "asr95_GoogleCloudStorageV2_asp",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -57,19 +57,19 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "010T8D0B00000000003L"
+        "repoHandle" : "010QNH0B000000000004"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "asrocky95",
+        "description" : null,
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }
     },
     "path" : "/SYS"
   }, {
-    "id" : "34gv5QrjeDkfiWTtYSNYWj",
-    "name" : "asrocky95",
+    "id" : "7kqWZR7CfcledgNSe8Kd0O",
+    "name" : "AS_SAG01",
     "type" : "AgentGroup",
     "metadata" : {
       "modelVersion" : {
@@ -77,7 +77,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "010T8D2500000000005Q"
+        "repoHandle" : "010QNH25000000000002"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -88,6 +88,6 @@
     },
     "path" : "/SYS"
   } ],
-  "readableFileExtension" : "json",
-  "readableFilePresent" : true
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
 }
