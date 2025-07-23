@@ -1,0 +1,1034 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "01_m_Product_Detail",
+    "links" : [
+      {
+        "link" : "rule_CountrySpecification -> stg_Product_Detail",
+        "groupLink" : "MappletOutputTx_Output -> DefaultGroup"
+      },
+      {
+        "link" : "src_Product_Detail -> rule_CountrySpecification",
+        "groupLink" : "DefaultGroup -> 入力グループ:"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2025-07-19T23:51:35.580Z",
+        "name" : "src_Product_Detail",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "PRODUCT_NUMBER"
+            },
+            "name" : "PRODUCT_NUMBER",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PRODUCT_ID"
+            },
+            "name" : "PRODUCT_ID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PRODUCT_NAME"
+            },
+            "name" : "PRODUCT_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 100,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PRODUCT_DESC"
+            },
+            "name" : "PRODUCT_DESC",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 500,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "LAUNCH_DATE"
+            },
+            "name" : "LAUNCH_DATE",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "RENEWAL_DATE"
+            },
+            "name" : "RENEWAL_DATE",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "OWNER_ID"
+            },
+            "name" : "OWNER_ID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PO_FIRST_NAME"
+            },
+            "name" : "PO_FIRST_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 15,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PO_LAST_NAME"
+            },
+            "name" : "PO_LAST_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 15,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ORIGIN_COUNTRY"
+            },
+            "name" : "ORIGIN_COUNTRY",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 150,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CONTACT_NUMBER"
+            },
+            "name" : "CONTACT_NUMBER",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 20,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "EMAIL"
+            },
+            "name" : "EMAIL",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 50,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@kOZv2krzBuVcVM1ygvZX6P",
+          "connectionName" : "asr95_OraRDSts_asekinedemo",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "Oracle",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "ASEKINEDEMO/PRODUCT_DETAIL",
+            "dbSchema" : "ASEKINEDEMO",
+            "label" : "PRODUCT_DETAIL",
+            "objectName" : "PRODUCT_DETAIL",
+            "path" : "ASEKINEDEMO/PRODUCT_DETAIL",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "PRODUCT_NUMBER",
+                "fieldType" : "CONNECTOR",
+                "label" : "PRODUCT_NUMBER",
+                "nativeName" : "PRODUCT_NUMBER",
+                "nativeType" : "decimal",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "ASEKINEDEMO/PRODUCT_DETAIL"
+                  }
+                ]
+              },
+              {
+                "name" : "PRODUCT_ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "PRODUCT_ID",
+                "nativeName" : "PRODUCT_ID",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "ASEKINEDEMO/PRODUCT_DETAIL"
+                  }
+                ]
+              },
+              {
+                "name" : "PRODUCT_NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "PRODUCT_NAME",
+                "nativeName" : "PRODUCT_NAME",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 100,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "ASEKINEDEMO/PRODUCT_DETAIL"
+                  }
+                ]
+              },
+              {
+                "name" : "PRODUCT_DESC",
+                "fieldType" : "CONNECTOR",
+                "label" : "PRODUCT_DESC",
+                "nativeName" : "PRODUCT_DESC",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 500,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "ASEKINEDEMO/PRODUCT_DETAIL"
+                  }
+                ]
+              },
+              {
+                "name" : "LAUNCH_DATE",
+                "fieldType" : "CONNECTOR",
+                "label" : "LAUNCH_DATE",
+                "nativeName" : "LAUNCH_DATE",
+                "nativeType" : "timestamp",
+                "original" : "false",
+                "precision" : 23,
+                "scale" : 3,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "ASEKINEDEMO/PRODUCT_DETAIL"
+                  }
+                ]
+              },
+              {
+                "name" : "RENEWAL_DATE",
+                "fieldType" : "CONNECTOR",
+                "label" : "RENEWAL_DATE",
+                "nativeName" : "RENEWAL_DATE",
+                "nativeType" : "timestamp",
+                "original" : "false",
+                "precision" : 23,
+                "scale" : 3,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "ASEKINEDEMO/PRODUCT_DETAIL"
+                  }
+                ]
+              },
+              {
+                "name" : "OWNER_ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "OWNER_ID",
+                "nativeName" : "OWNER_ID",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "ASEKINEDEMO/PRODUCT_DETAIL"
+                  }
+                ]
+              },
+              {
+                "name" : "PO_FIRST_NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "PO_FIRST_NAME",
+                "nativeName" : "PO_FIRST_NAME",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 15,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "ASEKINEDEMO/PRODUCT_DETAIL"
+                  }
+                ]
+              },
+              {
+                "name" : "PO_LAST_NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "PO_LAST_NAME",
+                "nativeName" : "PO_LAST_NAME",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 15,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "ASEKINEDEMO/PRODUCT_DETAIL"
+                  }
+                ]
+              },
+              {
+                "name" : "ORIGIN_COUNTRY",
+                "fieldType" : "CONNECTOR",
+                "label" : "ORIGIN_COUNTRY",
+                "nativeName" : "ORIGIN_COUNTRY",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 150,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "ASEKINEDEMO/PRODUCT_DETAIL"
+                  }
+                ]
+              },
+              {
+                "name" : "CONTACT_NUMBER",
+                "fieldType" : "CONNECTOR",
+                "label" : "CONTACT_NUMBER",
+                "nativeName" : "CONTACT_NUMBER",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 20,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "ASEKINEDEMO/PRODUCT_DETAIL"
+                  }
+                ]
+              },
+              {
+                "name" : "EMAIL",
+                "fieldType" : "CONNECTOR",
+                "label" : "EMAIL",
+                "nativeName" : "EMAIL",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 50,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "ASEKINEDEMO/PRODUCT_DETAIL"
+                  }
+                ]
+              }
+            ]
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2025-07-19T23:51:35.580Z",
+        "name" : "stg_Product_Detail",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "false",
+        "fieldMappingMode" : "MANUAL",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "PRODUCT_NUMBER"
+            },
+            "name" : "PRODUCT_NUMBER",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PRODUCT_ID"
+            },
+            "name" : "PRODUCT_ID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PRODUCT_NAME"
+            },
+            "name" : "PRODUCT_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 100,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PRODUCT_DESC"
+            },
+            "name" : "PRODUCT_DESC",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 500,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "LAUNCH_DATE"
+            },
+            "name" : "LAUNCH_DATE",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "RENEWAL_DATE"
+            },
+            "name" : "RENEWAL_DATE",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9
+          },
+          {
+            "adapterField" : {
+              "name" : "OWNER_ID"
+            },
+            "name" : "OWNER_ID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PO_FIRST_NAME"
+            },
+            "name" : "PO_FIRST_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 15,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PO_LAST_NAME"
+            },
+            "name" : "PO_LAST_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 15,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ORIGIN_COUNTRY"
+            },
+            "name" : "ORIGIN_COUNTRY",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 150,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CONTACT_NUMBER"
+            },
+            "name" : "CONTACT_NUMBER",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 20,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "EMAIL"
+            },
+            "name" : "EMAIL",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 50,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@fAaibHELbQ6kkMSaKsquau",
+          "connectionName" : "asr95_SnowFlakets_CDIR",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "TOOLKIT",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "JAPAN_SC_DB/ASEKINE/STG_PRODUCT_DETAIL",
+            "label" : "JAPAN_SC_DB/ASEKINE/STG_PRODUCT_DETAIL",
+            "objectName" : "STG_PRODUCT_DETAIL",
+            "objectType" : "table",
+            "path" : "JAPAN_SC_DB/ASEKINE/STG_PRODUCT_DETAIL",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "PRODUCT_NUMBER",
+                "fieldType" : "CONNECTOR",
+                "label" : "PRODUCT_NUMBER",
+                "nativeName" : "PRODUCT_NUMBER",
+                "nativeType" : "number",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "STG_PRODUCT_DETAIL"
+                  }
+                ]
+              },
+              {
+                "name" : "PRODUCT_ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "PRODUCT_ID",
+                "nativeName" : "PRODUCT_ID",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "STG_PRODUCT_DETAIL"
+                  }
+                ]
+              },
+              {
+                "name" : "PRODUCT_NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "PRODUCT_NAME",
+                "nativeName" : "PRODUCT_NAME",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 100,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "STG_PRODUCT_DETAIL"
+                  }
+                ]
+              },
+              {
+                "name" : "PRODUCT_DESC",
+                "fieldType" : "CONNECTOR",
+                "label" : "PRODUCT_DESC",
+                "nativeName" : "PRODUCT_DESC",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 500,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "STG_PRODUCT_DETAIL"
+                  }
+                ]
+              },
+              {
+                "name" : "LAUNCH_DATE",
+                "fieldType" : "CONNECTOR",
+                "label" : "LAUNCH_DATE",
+                "nativeName" : "LAUNCH_DATE",
+                "nativeType" : "timestampntz",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 9,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "STG_PRODUCT_DETAIL"
+                  }
+                ]
+              },
+              {
+                "name" : "RENEWAL_DATE",
+                "fieldType" : "CONNECTOR",
+                "label" : "RENEWAL_DATE",
+                "nativeName" : "RENEWAL_DATE",
+                "nativeType" : "timestampntz",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 9,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "STG_PRODUCT_DETAIL"
+                  }
+                ]
+              },
+              {
+                "name" : "OWNER_ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "OWNER_ID",
+                "nativeName" : "OWNER_ID",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "STG_PRODUCT_DETAIL"
+                  }
+                ]
+              },
+              {
+                "name" : "PO_FIRST_NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "PO_FIRST_NAME",
+                "nativeName" : "PO_FIRST_NAME",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 15,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "STG_PRODUCT_DETAIL"
+                  }
+                ]
+              },
+              {
+                "name" : "PO_LAST_NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "PO_LAST_NAME",
+                "nativeName" : "PO_LAST_NAME",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 15,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "STG_PRODUCT_DETAIL"
+                  }
+                ]
+              },
+              {
+                "name" : "ORIGIN_COUNTRY",
+                "fieldType" : "CONNECTOR",
+                "label" : "ORIGIN_COUNTRY",
+                "nativeName" : "ORIGIN_COUNTRY",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 150,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "STG_PRODUCT_DETAIL"
+                  }
+                ]
+              },
+              {
+                "name" : "CONTACT_NUMBER",
+                "fieldType" : "CONNECTOR",
+                "label" : "CONTACT_NUMBER",
+                "nativeName" : "CONTACT_NUMBER",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 20,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "STG_PRODUCT_DETAIL"
+                  }
+                ]
+              },
+              {
+                "name" : "EMAIL",
+                "fieldType" : "CONNECTOR",
+                "label" : "EMAIL",
+                "nativeName" : "EMAIL",
+                "nativeType" : "varchar",
+                "original" : "false",
+                "precision" : 50,
+                "scale" : 0,
+                "metaExtensions" : [
+                  {
+                    "name" : "isNullable",
+                    "value" : "true"
+                  }
+                ],
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "STG_PRODUCT_DETAIL"
+                  }
+                ]
+              }
+            ],
+            "objectAttributes" : [
+              {
+                "name" : "tableType",
+                "value" : "TABLE"
+              }
+            ]
+          },
+          "runtimeAttributes" : {
+            "attributes" : [
+              {
+                "name" : "UpdateMode",
+                "value" : "Update As Update"
+              },
+              {
+                "name" : "Truncate Target Table",
+                "value" : "YES"
+              }
+            ]
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        },
+        "manualMappings" : {
+          "mappingList" : [
+            {
+              "fromFieldName" : "PRODUCT_NUMBER",
+              "toField" : {
+                "name" : "PRODUCT_NUMBER"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "PRODUCT_ID",
+              "toField" : {
+                "name" : "PRODUCT_ID"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "PRODUCT_NAME",
+              "toField" : {
+                "name" : "PRODUCT_NAME"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "PRODUCT_DESC",
+              "toField" : {
+                "name" : "PRODUCT_DESC"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "LAUNCH_DATE",
+              "toField" : {
+                "name" : "LAUNCH_DATE"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "RENEWAL_DATE",
+              "toField" : {
+                "name" : "RENEWAL_DATE"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "OWNER_ID",
+              "toField" : {
+                "name" : "OWNER_ID"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "PO_FIRST_NAME",
+              "toField" : {
+                "name" : "PO_FIRST_NAME"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "PO_LAST_NAME",
+              "toField" : {
+                "name" : "PO_LAST_NAME"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "CONTACT_NUMBER",
+              "toField" : {
+                "name" : "CONTACT_NUMBER"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "EMAIL",
+              "toField" : {
+                "name" : "EMAIL"
+              },
+              "fromFieldNames" : null
+            },
+            {
+              "fromFieldName" : "PrimaryRuleSet",
+              "toField" : {
+                "name" : "ORIGIN_COUNTRY"
+              },
+              "fromFieldNames" : null
+            }
+          ]
+        }
+      },
+      {
+        "createTime" : "2025-07-20T00:00:36.314Z",
+        "name" : "rule_CountrySpecification",
+        "advancedProperties" : [
+          {
+            "name" : "version",
+            "value" : "R37"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "入力グループ:",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          },
+          {
+            "input" : "false",
+            "name" : "MappletOutputTx_Output",
+            "output" : "true"
+          }
+        ],
+        "documentId" : "@14kZC5I9PjCl5Xf4WEQuqR",
+        "ruleId" : "@14kZC5I9PjCl5Xf4WEQuqR",
+        "inputGroups" : [
+          {
+            "name" : "入力グループ:",
+            "fieldMappingMode" : "MANUAL",
+            "fieldMapping" : {
+              "fields" : [
+                {
+                  "name" : "ORIGIN_COUNTRY",
+                  "precision" : 0,
+                  "scale" : 0,
+                  "txField" : {
+                    "name" : "In_CountryName"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "inputFields" : {
+          "fieldList" : [
+            {
+              "name" : "In_CountryName",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 100,
+              "scale" : 0
+            }
+          ]
+        },
+        "outputFields" : {
+          "fieldList" : [
+            {
+              "name" : "PrimaryRuleSet",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 100,
+              "scale" : 0
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-07-23 10:22:57 JST"
+}

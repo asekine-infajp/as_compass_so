@@ -1,0 +1,130 @@
+{
+  "name" : "01_mt_Product_Detail",
+  "runtimeEnvironmentId" : "@7kqWZR7CfcledgNSe8Kd0O",
+  "runtimeEnvironmentName" : "AS_SAG01",
+  "maxLogs" : 10,
+  "parameters" : [
+    {
+      "name" : "$src_Product_Detail$",
+      "type" : "EXTENDED_SOURCE",
+      "label" : "src_Product_Detail",
+      "uiProperties" : {
+        "connectionParameterized" : "false",
+        "isSelectDistinct" : "false",
+        "isMsrcFilterParameterized" : "false",
+        "isMsrcSortParameterized" : "false",
+        "objectParameterized" : "false",
+        "visible" : "false",
+        "flags" : "SUPPORTS_MULTI_SCHEMA",
+        "originalPath" : "src_Product_Detail"
+      },
+      "sourceConnectionId" : "@kOZv2krzBuVcVM1ygvZX6P",
+      "connectionName" : "asr95_OraRDSts_asekinedemo",
+      "newFlatFile" : false,
+      "newObject" : false,
+      "showBusinessNames" : false,
+      "naturalOrder" : true,
+      "truncateTarget" : false,
+      "bulkApiDBTarget" : false,
+      "customFuncCfg" : { },
+      "extendedObject" : {
+        "object" : {
+          "name" : "ASEKINEDEMO/PRODUCT_DETAIL",
+          "label" : "PRODUCT_DETAIL",
+          "metadataUpdated" : false,
+          "dbSchema" : "ASEKINEDEMO"
+        },
+        "singleMode" : true,
+        "objects" : [
+          {
+            "name" : "ASEKINEDEMO/PRODUCT_DETAIL",
+            "label" : "PRODUCT_DETAIL",
+            "metadataUpdated" : false,
+            "dbSchema" : "ASEKINEDEMO"
+          }
+        ]
+      },
+      "commandType" : 0,
+      "handleSpecialChars" : false,
+      "handleDecimalRoundOff" : false,
+      "frsAsset" : false,
+      "dynamicFileName" : false,
+      "excludeDynamicFileNameField" : false,
+      "currentlyProcessedFileName" : false,
+      "retainFieldMetadata" : false,
+      "useExactSrcNames" : false,
+      "userUpdated" : true,
+      "unspecified" : false,
+      "fetchMode" : "ORIGINAL",
+      "runtimeParameterData" : {
+        "connectionRuntimeParameter" : false,
+        "objectRuntimeParameter" : false
+      },
+      "restmodernSource" : true,
+      "fileList" : false
+    },
+    {
+      "name" : "$stg_Product_Detail$",
+      "type" : "TARGET",
+      "label" : "stg_Product_Detail",
+      "uiProperties" : {
+        "connectionParameterized" : "false",
+        "objectParameterized" : "false",
+        "visible" : "false",
+        "supportApplyDDLChanges" : "false",
+        "originalPath" : "stg_Product_Detail"
+      },
+      "targetConnectionId" : "@fAaibHELbQ6kkMSaKsquau",
+      "connectionName" : "asr95_SnowFlakets_CDIR",
+      "targetObject" : "JAPAN_SC_DB/ASEKINE/STG_PRODUCT_DETAIL",
+      "targetObjectLabel" : "JAPAN_SC_DB/ASEKINE/STG_PRODUCT_DETAIL",
+      "newFlatFile" : false,
+      "newObject" : false,
+      "showBusinessNames" : false,
+      "naturalOrder" : true,
+      "truncateTarget" : false,
+      "bulkApiDBTarget" : false,
+      "operationType" : "Insert",
+      "customFuncCfg" : { },
+      "extendedObject" : {
+        "singleMode" : true
+      },
+      "commandType" : 0,
+      "handleSpecialChars" : false,
+      "handleDecimalRoundOff" : false,
+      "frsAsset" : false,
+      "dynamicFileName" : false,
+      "excludeDynamicFileNameField" : false,
+      "currentlyProcessedFileName" : false,
+      "retainFieldMetadata" : false,
+      "objectName" : "JAPAN_SC_DB/ASEKINE/STG_PRODUCT_DETAIL",
+      "objectLabel" : "JAPAN_SC_DB/ASEKINE/STG_PRODUCT_DETAIL",
+      "useExactSrcNames" : false,
+      "userUpdated" : true,
+      "unspecified" : false,
+      "fetchMode" : "ORIGINAL",
+      "runtimeParameterData" : {
+        "connectionRuntimeParameter" : false,
+        "objectRuntimeParameter" : false
+      },
+      "targetSchemaProviderType" : "SELECTED_OBJECT",
+      "restmodernSource" : true,
+      "fileList" : false
+    }
+  ],
+  "verbose" : false,
+  "lastRunTime" : 1752971648000,
+  "mappingId" : "@fJqIogJ0SiulSBHIee0aUI",
+  "mappingTemplateName" : "01_m_Product_Detail",
+  "hidden" : false,
+  "enableCrossSchemaPushdown" : false,
+  "enableParallelRun" : false,
+  "autoTunedApplied" : false,
+  "autoTunedAppliedType" : "NONE",
+  "schemaMode" : "async",
+  "valid" : true,
+  "optimizationPlan" : "NONE",
+  "allowMaxFieldLength" : false,
+  "midstreamPreview" : false,
+  "vcsExportTime" : "2025-07-23 10:22:58 JST"
+}

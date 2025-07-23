@@ -1,0 +1,90 @@
+{
+  "objectInfo" : {
+    "id" : "fJqIogJ0SiulSBHIee0aUI",
+    "name" : "01_m_Product_Detail",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010QNH17000000000019"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2025-07-23T01:22:59.613Z",
+  "objectRefs" : [ {
+    "id" : "14kZC5I9PjCl5Xf4WEQuqR",
+    "name" : "rs_ISO_Full_Country_Name",
+    "type" : "RULE_SPECIFICATION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "14kZC5I9PjCl5Xf4WEQuqR"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Returns the ISO country name for any country identifier in an input field.",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/90021_DQ_Bundle/Data Quality Core Bundle"
+  }, {
+    "id" : "kOZv2krzBuVcVM1ygvZX6P",
+    "name" : "asr95_OraRDSts_asekinedemo",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010QNH0B00000000000F"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "fAaibHELbQ6kkMSaKsquau",
+    "name" : "asr95_SnowFlakets_CDIR",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010QNH0B000000000009"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  } ],
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
+}

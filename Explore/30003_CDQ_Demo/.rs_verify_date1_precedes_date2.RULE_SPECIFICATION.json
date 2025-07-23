@@ -1,0 +1,27 @@
+{
+  "objectInfo" : {
+    "id" : "bWUkCJ0Hqebc7UVamIdxIL",
+    "name" : "rs_verify_date1_precedes_date2",
+    "type" : "RULE_SPECIFICATION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "bWUkCJ0Hqebc7UVamIdxIL"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "Verifies that date1 precedes date2.",
+        "contentType" : null,
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2025-07-23T01:22:59.617Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
