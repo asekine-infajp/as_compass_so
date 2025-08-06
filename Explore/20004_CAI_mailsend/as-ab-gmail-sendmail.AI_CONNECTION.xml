@@ -1,0 +1,67 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>0B4EFpr1Iw8jIw8-gt-213244-2025-08-05T12:22:02.399Z::conn.xml</types1:EntryId>
+      <types1:Name>as-ab-gmail-sendmail</types1:Name>
+      <types1:ParentFlowIds>MDOp7jvpppppppp-gt-122957-2025-08-05T13:03:05.628Z::pd.xml,VrSp7aa-gt-212686-2025-08-05T12:49:32.763Z::pd.xml</types1:ParentFlowIds>
+      <types1:MimeType>application/xml+connection</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>Asekine_GCS_Sub_01</types1:CreatedBy>
+      <types1:CreationDate>2025-08-05T12:22:02Z</types1:CreationDate>
+      <types1:ModifiedBy>Asekine_GCS_Sub_01</types1:ModifiedBy>
+      <types1:ModificationDate>2025-08-05T12:49:55Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>Asekine_GCS_Sub_01</types1:PublishedBy>
+      <types1:PublicationDate>2025-08-05T13:10:06Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/rt.connection/as-ab-gmail-sendmail/as-ab-gmail-sendmail.conn.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <connection xmlns="http://schemas.informatica.com/socrates/data-services/2014/04/avosConnections.xsd"
+                     displayName="as-ab-gmail-sendmail"
+                     label="as-ab-gmail-sendmail"
+                     name="as-ab-gmail-sendmail">
+            <description/>
+            <tags/>
+            <agent/>
+            <attributes>
+               <attribute encrypted="false" name="hostName" value="smtp.gmail.com"/>
+               <attribute encrypted="false" name="port" value="587"/>
+               <attribute encrypted="false"
+                          name="testToAddress"
+                          value="asekine@informatica.com"/>
+               <attribute encrypted="false"
+                          name="fromAddress"
+                          value="asekine.infajp@gmail.com"/>
+            </attributes>
+            <javaConnector xmlns="http://schemas.informatica.com/appmodules/screenflow/2014/04/avosConnectors.xsd"
+                           agentOnly="false"
+                           cloudOnly="false"
+                           plugin="Camel"
+                           supportsConnectionTest="true"
+                           supportsDataPreview="false"
+                           supportsOData="false"
+                           supportsPublishSkipMetadataRefresh="false"
+                           type="Email"
+                           uuid="9a8a03d0-0437-46c4-bedf-70acb4173c1f">
+               <description>Provides connections to email host servers.</description>
+            </javaConnector>
+            <authentication type="$infa_basicform">
+               <attributes>
+                  <attribute encrypted="false" name="Authentication" value="Enable"/>
+                  <attribute encrypted="false" name="username" value="asekine.infajp@gmail.com"/>
+                  <attribute encrypted="true" name="password" value=""/>
+                  <attribute encrypted="false" name="security" value="TLS"/>
+                  <attribute encrypted="false" name="connectionTimeout" value="30000"/>
+               </attributes>
+            </authentication>
+         </connection>
+      </types1:Entry>
+      <types1:GUID>3DsTYBr2TECd1rzTONObCm</types1:GUID>
+      <types1:DisplayName>as-ab-gmail-sendmail</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2025-08-06T06:02:34.231Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

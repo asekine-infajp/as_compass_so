@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "7r4TFyfHnkhj8xig25ntWW",
+    "name" : "as-pca-sendmail-with-htmltagtest",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "VrSp7aa-gt-212686-2025-08-05T12:49:32.763Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2025-08-06T06:02:34.430Z",
+  "objectRefs" : [ {
+    "id" : "3DsTYBr2TECd1rzTONObCm",
+    "name" : "as-ab-gmail-sendmail",
+    "type" : "AI_CONNECTION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0B4EFpr1Iw8jIw8-gt-213244-2025-08-05T12:22:02.399Z::conn.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/20004_CAI_mailsend"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
