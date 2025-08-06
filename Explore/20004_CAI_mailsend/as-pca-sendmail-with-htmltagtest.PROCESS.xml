@@ -13,10 +13,10 @@
       <types1:CreatedBy>Asekine_GCS_Sub_01</types1:CreatedBy>
       <types1:CreationDate>2025-08-05T12:49:33Z</types1:CreationDate>
       <types1:ModifiedBy>Asekine_GCS_Sub_01</types1:ModifiedBy>
-      <types1:ModificationDate>2025-08-06T02:09:11Z</types1:ModificationDate>
-      <types1:PublicationStatus>out-of-date</types1:PublicationStatus>
+      <types1:ModificationDate>2025-08-06T08:52:31Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
       <types1:PublishedBy>Asekine_GCS_Sub_01</types1:PublishedBy>
-      <types1:PublicationDate>2025-08-06T02:05:55Z</types1:PublicationDate>
+      <types1:PublicationDate>2025-08-06T08:52:34Z</types1:PublicationDate>
       <types1:PublishedContributionId>project:/spi.as-pca-sendmail/as-pca-sendmail.pd.xml</types1:PublishedContributionId>
       <types1:Entry>
          <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
@@ -45,13 +45,13 @@
                </parameter>
             </input>
             <tempFields>
-               <field description="" name="t_emailbody" type="string">
+               <field description="" name="t_parameter" type="string">
                   <options>
                      <option name="required">false</option>
-                     <option name="initialvalue">testtest&lt;br&gt;kaigyo&lt;br&gt;kaigyo</option>
+                     <option name="initialvalue">&lt;p&gt;&lt;b&gt;test&lt;/b&gt;&lt;font color="red"&gt;test&lt;/font&gt;&lt;br&gt;kaigyo&lt;br&gt;kaigyo&lt;/p&gt;</option>
                   </options>
                </field>
-               <field description="" name="t_richtext" type="richtextarea">
+               <field description="" name="t_emailbody_richtext" type="richtextarea">
                   <options>
                      <option name="required">false</option>
                      <option name="text_height">12</option>
@@ -71,34 +71,35 @@
                <nvpair name="treatEmptyStringAsNull">true</nvpair>
                <nvpair name="treatEmptyObjectListAsNotArray">false</nvpair>
             </extData>
-            <flow id="d3471ef07-5e76-4661-870c-377c6e072553">
-               <start id="b5e095d0a-f645-4b27-ab88-ec555ea9e66e">
-                  <link id="d3d26e326-40c3-4eb2-8430-a377aa5508fe"
-                        targetId="Assignmentd82dedaf-83c6-4fc7-bc1b-faf4320e710a"/>
+            <flow id="j4963781d-d8e6-4bc0-81e2-6fa8ca3eff07">
+               <start id="yd53d8943-9534-4a30-b4af-0363d497eac0">
+                  <link id="i56502a8f-66f5-46aa-8cf2-378e0e134e1a"
+                        targetId="a17r4TFyfHnkhj8xig25ntWW-Assignmentd82dedaf-83c6-4fc7-bc1b-faf4320e710a"/>
                </start>
-               <assignment id="Assignmentd82dedaf-83c6-4fc7-bc1b-faf4320e710a">
-                  <title>Assignment to t_richtext, emailmessage[1]/to, etc,</title>
-                  <operation source="constant" to="temp.t_richtext">&lt;p&gt;てすと改行&lt;/p&gt;
+               <assignment id="a17r4TFyfHnkhj8xig25ntWW-Assignmentd82dedaf-83c6-4fc7-bc1b-faf4320e710a">
+                  <title>assign email body and parameter</title>
+                  <operation source="constant" to="temp.t_emailbody_richtext">&lt;p&gt;テスト&lt;/p&gt;
 &lt;p&gt;改行済&lt;/p&gt;
-&lt;p&gt;{$temp.t_emailbody}&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;darr;パラメータ展開start&lt;/p&gt;
+&lt;p&gt;{$temp.t_parameter}&lt;/p&gt;
+&lt;p&gt;&amp;uarr;パラメータ展開end&lt;/p&gt;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;</operation>
                   <operation source="constant" to="input.emailmessage[1]/to">asekine@informatica.com</operation>
                   <operation source="constant" to="input.emailmessage[1]/contentType">text/html</operation>
                   <operation source="constant" to="input.emailmessage[1]/subject">cai-gmal-send-test</operation>
-                  <operation source="field" to="input.emailmessage[1]/body">temp.t_richtext</operation>
-                  <link id="o8b85790a-35f1-41e9-85a6-7584f21e7eeb"
-                        targetId="Service1d20313a-7445-40a7-abce-f871e78e283e"/>
+                  <operation source="field" to="input.emailmessage[1]/body">temp.t_emailbody_richtext</operation>
+                  <link id="gb00dbe2c-3075-4cc0-8070-f1bbfa2efe2b"
+                        targetId="a17r4TFyfHnkhj8xig25ntWW-Service1d20313a-7445-40a7-abce-f871e78e283e"/>
                </assignment>
-               <service id="Service1d20313a-7445-40a7-abce-f871e78e283e">
+               <service id="a17r4TFyfHnkhj8xig25ntWW-Service1d20313a-7445-40a7-abce-f871e78e283e">
                   <title>sendEmailService</title>
                   <serviceName>as-ab-gmail-sendmail:sendEmailService</serviceName>
                   <serviceGUID>3DsTYBr2TECd1rzTONObCm</serviceGUID>
                   <serviceInput>
                      <parameter name="emailTaskInput" source="field">input.emailmessage</parameter>
                   </serviceInput>
-                  <link id="i712444a1-5544-43b5-bd36-545cdad86685"
+                  <link id="kd99cf4a5-7f2a-4172-8ef7-c540fc5c6e98"
                         targetId="a17r4TFyfHnkhj8xig25ntWW-end-x95dfd543-133f-4fb9-8e29-f2a580d7249c"/>
                </service>
                <end id="a17r4TFyfHnkhj8xig25ntWW-end-x95dfd543-133f-4fb9-8e29-f2a580d7249c">
@@ -110,5 +111,5 @@
       <types1:GUID>7r4TFyfHnkhj8xig25ntWW</types1:GUID>
       <types1:DisplayName>as-pca-sendmail-with-htmltagtest</types1:DisplayName>
    </types1:Item>
-   <types1:CurrentServerDateTime>2025-08-06T06:02:34.312Z</types1:CurrentServerDateTime>
+   <types1:CurrentServerDateTime>2025-08-06T09:05:42.333Z</types1:CurrentServerDateTime>
 </aetgt:getResponse>
