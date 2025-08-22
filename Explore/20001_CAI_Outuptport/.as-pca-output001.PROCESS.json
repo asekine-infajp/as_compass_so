@@ -1,0 +1,27 @@
+{
+  "objectInfo" : {
+    "id" : "7iUkoZ8hhxHf2bkbmHzYc8",
+    "name" : "as-pca-output001",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "sm8lnCmp6oIuQaa-gt-85387-2025-08-22T03:34:03.03Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2025-08-22T04:08:48.788Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

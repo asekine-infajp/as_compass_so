@@ -1,0 +1,86 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>sm8lnCmp6oIuQaa-gt-85387-2025-08-22T03:34:03.03Z::pd.xml</types1:EntryId>
+      <types1:Name>as-pca-output001</types1:Name>
+      <types1:MimeType>application/xml+process</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>Asekine_GCS_Sub_01</types1:CreatedBy>
+      <types1:CreationDate>2025-08-22T03:34:03Z</types1:CreationDate>
+      <types1:ModifiedBy>Asekine_GCS_Sub_01</types1:ModifiedBy>
+      <types1:ModificationDate>2025-08-22T03:46:05Z</types1:ModificationDate>
+      <types1:PublicationStatus>out-of-date</types1:PublicationStatus>
+      <types1:PublishedBy>Asekine_GCS_Sub_01</types1:PublishedBy>
+      <types1:PublicationDate>2025-08-22T03:35:27Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/spi.as-pca-output001/as-pca-output001.pd.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                  xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                  xmlns:list="urn:activevos:spi:list:functions"
+                  GUID="7iUkoZ8hhxHf2bkbmHzYc8"
+                  displayName="as-pca-output001"
+                  name="as-pca-output001"
+                  overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <output>
+               <field description="" name="o_str" type="string">
+                  <options>
+                     <option name="required">false</option>
+                     <option name="initialvalue">HelloWorld</option>
+                  </options>
+               </field>
+               <field description="" name="o_int" type="int">
+                  <options>
+                     <option name="required">false</option>
+                     <option name="initialvalue">999</option>
+                  </options>
+               </field>
+            </output>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="verbose">
+               <rest>
+                  <allowAnonymousAccess/>
+               </rest>
+            </deployment>
+            <extData>
+               <nvpair name="treatEmptyStringAsNotNull">false</nvpair>
+               <nvpair name="treatEmptyStringAsNull">true</nvpair>
+               <nvpair name="treatEmptyObjectListAsArray">true</nvpair>
+               <nvpair name="treatEmptyObjectListAsNotArray">false</nvpair>
+            </extData>
+            <flow id="qedf57c15-f400-4ba0-9ad7-f3f3238a0242">
+               <start id="c983ab768-2ae3-4555-82cf-8ff0ba416f7b">
+                  <link id="z3af63430-d3b0-4978-b289-c2860ccb9c18"
+                        targetId="end-ecdc14459-9c83-4e36-992e-ae701ad47424"/>
+               </start>
+               <end id="end-ecdc14459-9c83-4e36-992e-ae701ad47424">
+                  <title>終了</title>
+               </end>
+            </flow>
+         </process>
+         <ns1:sample-data-sets xmlns:ns1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/sampleData.xsd">
+            <ns1:SampleData>
+               <ns1:Id>852c7f97-54d8-403d-b5d1-7d4f70ac0705</ns1:Id>
+               <ns1:Name>no_imput_normal</ns1:Name>
+               <ns1:CreatedBy>Asekine_GCS_Sub_01</ns1:CreatedBy>
+               <ns1:CreationDate>2025-08-22T03:49:53Z</ns1:CreationDate>
+               <ns1:ModifiedBy>Asekine_GCS_Sub_01</ns1:ModifiedBy>
+               <ns1:ModificationDate>2025-08-22T03:49:53Z</ns1:ModificationDate>
+               <ns1:Data format="json">{}</ns1:Data>
+            </ns1:SampleData>
+         </ns1:sample-data-sets>
+      </types1:Entry>
+      <types1:GUID>7iUkoZ8hhxHf2bkbmHzYc8</types1:GUID>
+      <types1:DisplayName>as-pca-output001</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2025-08-22T04:08:48.654Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
