@@ -13,10 +13,10 @@
       <types1:CreatedBy>Asekine_GCS_Sub_01</types1:CreatedBy>
       <types1:CreationDate>2025-08-05T12:49:33Z</types1:CreationDate>
       <types1:ModifiedBy>Asekine_GCS_Sub_01</types1:ModifiedBy>
-      <types1:ModificationDate>2025-08-06T08:52:31Z</types1:ModificationDate>
+      <types1:ModificationDate>2025-08-07T08:56:57Z</types1:ModificationDate>
       <types1:PublicationStatus>published</types1:PublicationStatus>
       <types1:PublishedBy>Asekine_GCS_Sub_01</types1:PublishedBy>
-      <types1:PublicationDate>2025-08-06T08:52:34Z</types1:PublicationDate>
+      <types1:PublicationDate>2025-08-07T08:57:07Z</types1:PublicationDate>
       <types1:PublishedContributionId>project:/spi.as-pca-sendmail/as-pca-sendmail.pd.xml</types1:PublishedContributionId>
       <types1:Entry>
          <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
@@ -60,20 +60,22 @@
                </field>
             </tempFields>
             <notes/>
-            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="none">
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="normal">
                <rest>
                   <allowAnonymousAccess/>
                </rest>
             </deployment>
             <extData>
+               <nvpair name="treatEmptyStringAsNotNull">false</nvpair>
+               <nvpair name="treatEmptyStringAsNull">true</nvpair>
                <nvpair name="treatEmptyObjectListAsArray">true</nvpair>
                <nvpair name="treatEmptyObjectListAsNotArray">false</nvpair>
-               <nvpair name="treatEmptyStringAsNull">true</nvpair>
                <nvpair name="treatEmptyObjectListAsNotArray">false</nvpair>
+               <nvpair name="treatEmptyStringAsNull">true</nvpair>
             </extData>
-            <flow id="j4963781d-d8e6-4bc0-81e2-6fa8ca3eff07">
-               <start id="yd53d8943-9534-4a30-b4af-0363d497eac0">
-                  <link id="i56502a8f-66f5-46aa-8cf2-378e0e134e1a"
+            <flow id="ed4628fcc-b3ef-404c-ba62-9105cbb67244">
+               <start id="n116b8058-ddd1-4494-8dc7-f46a97171199">
+                  <link id="y3e179264-3880-4b03-bb7c-198b0cd141c4"
                         targetId="a17r4TFyfHnkhj8xig25ntWW-Assignmentd82dedaf-83c6-4fc7-bc1b-faf4320e710a"/>
                </start>
                <assignment id="a17r4TFyfHnkhj8xig25ntWW-Assignmentd82dedaf-83c6-4fc7-bc1b-faf4320e710a">
@@ -89,7 +91,7 @@
                   <operation source="constant" to="input.emailmessage[1]/contentType">text/html</operation>
                   <operation source="constant" to="input.emailmessage[1]/subject">cai-gmal-send-test</operation>
                   <operation source="field" to="input.emailmessage[1]/body">temp.t_emailbody_richtext</operation>
-                  <link id="gb00dbe2c-3075-4cc0-8070-f1bbfa2efe2b"
+                  <link id="g5ddac498-5610-481c-a30f-0cd140e8185f"
                         targetId="a17r4TFyfHnkhj8xig25ntWW-Service1d20313a-7445-40a7-abce-f871e78e283e"/>
                </assignment>
                <service id="a17r4TFyfHnkhj8xig25ntWW-Service1d20313a-7445-40a7-abce-f871e78e283e">
@@ -99,7 +101,7 @@
                   <serviceInput>
                      <parameter name="emailTaskInput" source="field">input.emailmessage</parameter>
                   </serviceInput>
-                  <link id="kd99cf4a5-7f2a-4172-8ef7-c540fc5c6e98"
+                  <link id="b88fe2bb3-8d96-46e1-8b1a-a213018a8dc0"
                         targetId="a17r4TFyfHnkhj8xig25ntWW-end-x95dfd543-133f-4fb9-8e29-f2a580d7249c"/>
                </service>
                <end id="a17r4TFyfHnkhj8xig25ntWW-end-x95dfd543-133f-4fb9-8e29-f2a580d7249c">
@@ -111,5 +113,5 @@
       <types1:GUID>7r4TFyfHnkhj8xig25ntWW</types1:GUID>
       <types1:DisplayName>as-pca-sendmail-with-htmltagtest</types1:DisplayName>
    </types1:Item>
-   <types1:CurrentServerDateTime>2025-08-06T09:05:42.333Z</types1:CurrentServerDateTime>
+   <types1:CurrentServerDateTime>2025-09-18T08:43:04Z</types1:CurrentServerDateTime>
 </aetgt:getResponse>
